@@ -1,0 +1,47 @@
+.contact{
+    height: 500px;
+    background:linear-gradient(100deg, white, rgb(121, 196, 196));
+    }
+    
+    .contact-text{
+    padding: 0;
+    margin-left: 15%;
+    flex: 60%;
+    padding-top: 10%;
+    margin-top: 0;
+    }
+    
+    .contact-icons{
+    padding: 20px;
+    margin:0;
+    width: 60px;
+    border-radius: 32px;
+    }
+    
+    .contact button{
+    border: 0;
+    width: 0;
+    padding: 0;
+    } 
+    
+    .contact div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:0;
+    background:linear-gradient(100deg, white, rgb(121, 196, 196));
+    }
+    
+    
+    
+    
+    
+    .copy-right-section{
+    height: 50px;
+    background-color: rgb(10, 6, 10);
+    color: #f1f1f1;
+    text-align: center;
+    padding: 0;
+    }
+    
+    

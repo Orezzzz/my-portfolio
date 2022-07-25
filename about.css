@@ -1,0 +1,121 @@
+.about-section{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(to bottom right, #fff7df 50%, rgba(255, 193, 111, 0.747) 50%);
+    
+    }
+    
+    
+    .about{
+    padding-left: 20%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(214, 62, 62);
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    }
+    
+    
+    
+    
+    @media(max-width: 740px){
+    
+    .about-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .my-anime-image{
+    
+    width: 250px;
+    flex: 1fr;
+    border-radius: 200px; 
+    
+    }
+    
+    .about-text{
+    flex: 1fr;
+    margin-right: 10%;
+    margin-left: 10%;
+    }
+    
+    }
+    @media(min-width: 740px){
+    
+    .about-elements{
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    }
+    .my-anime-image{
+    flex: 1fr;
+    border-radius: 200px;
+    margin-left:15%;
+    
+    }
+    .about-text{
+    flex: 1fr;
+    margin-right: 10%;
+    margin-left: 10%;
+    }
+    }
+    
+    
+    
+    
+    /*Skills section*/
+    
+    
+    .skills-section{
+    background: linear-gradient(60deg, #cca58f 50%,  rgba(255, 193, 111, 0.747) 50%);
+    height: 300px;
+    display:flex;
+    flex-direction: row;
+    }
+    
+    
+    .Skills-Tools-text{
+    display: flex;
+    padding: 0;
+    margin-left: 15%;
+    flex: 60%;
+    align-items: center;
+    }
+    
+    .Skills-Tools-icons{
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:20%;
+    flex-wrap:wrap;
+    }
+    
+    .Skills-Tools-icons img{
+    padding: 20px;
+    margin:0;
+    width: 60px;
+    border-radius: 32px;
+    }
+    
+    .Skills-Tools-icons img:nth-child(5){
+    border-radius: 0px;
+    }
+    
+    @media (max-width: 920px){
+    .Skills-Tools-icons{
+    flex-direction: column;
+    padding-left: 40px;
+    }
+    
+    .Skills-Tools-icons img{
+    padding: 20px;
+    margin:0;
+    width: 50px;
+    border-radius: 32px;
+    }
+    }
+    

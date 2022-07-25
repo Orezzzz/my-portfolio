@@ -1,731 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
 
-      html{
-        scroll-behavior: smooth;
-      }
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book-image section.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="mobile-view.css">
 
-      body{
-        margin: 0;
-        padding-top: 50px;
-      }
-
-      .header{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(117, 208, 231);
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        height: 60px;
-        padding-right: 250px;
-        z-index: 2;
-        justify-content: space-between;
-        align-items: center;
-      }
-      
-      .header-left-section{
-        display: flex;
-        align-items: center;
-        padding-left: 30px;
-        padding-right: 250px;
-      }
-
-     .logo{
-        width: 30px;
-      }
-
-      .logo:hover {
-        opacity: 0.6;
-      }
-      .logo-button{
-        padding: 0;
-        margin: 0;
-        border: 0;
-        background-color: rgb(117, 208, 231);
-      }
-
-      .header-right-section{
-        display: flex;
-        flex: 100%;
-        justify-content: space-between;
-      }
-
-      @media (min-width: 950px){
-
-      .header-items{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex: 100%;
-        align-items: center;
-      }
-
-
-      .header-items a{
-        color: rgb(81, 5, 100);
-        padding: 12px 16px;
-        font-style:"Open Sans", sans-serif;
-        font-weight:bolder;
-        font-size: large;
-        text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-        transition: text-decoration-color 300ms;
-      }
-
-  .header-items a:hover{
-        text-decoration-color: rgb(201, 24, 24);
-      }
-
-      .hambuger-button{
-        display: none;
-      }
- 
-      }
-
-
-
-
-
-
-      @media (max-width: 950px){
-        .header{
-          padding-right: 0;
-        }
-        .header-items{
-          display: none;
-        }
-
-        .header-right-section{
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        justify-content: space-between;
-      }
-
-       .header-hidden-section{
-        display: flex;
-        flex-direction: row;
-        flex: 100%;
-        height: 60px;
-        align-items: center;
-        justify-content: center;
-       }
-        .hambuger-button{
-          display: flex;
-          background-color:rgb(117, 208, 231);
-          padding: 0;
-          border: 0;
-          margin-left: auto;
-          margin-right: auto;
-          position: relative;
-        }
-
-        .hambuger-icon{
-          width: 30px;
-          height: 30px;
-        }
-        
-        }
-
-        .header-hidden-items{
-          display: none;
-          flex-direction: column;
-          flex: 1fr;
-          position: fixed;
-          top: 30px;
-          background-color: #f9f9f9;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-          position: absolute;
-        }
-        .header-hidden-items a{
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-
-        .hambuger-icon:hover {
-          opacity: 0.6;
-        }
-        .hambuger-button:hover .header-hidden-items{
-          display: flex;
-        }
-       .header-hidden-items a:hover{
-          background-color: #f1f1f1;
-          color: rebeccapurple;
-        }
-      
-
-      
-
-
-
-
-
-
-
-     .screen-image{
-        width: 100%;
-        height: 780px;
-      }
-      .screen-image{
-        object-fit: cover;
-        object-position: bottom;
-        position: relative;
-      }
-
-      .screen-image-writing-left, .screen-image-writing-right{
-        position:absolute;
-        transform: rotate(-15deg);
-        font-size: large;
-        font-style: italic;
-        height: 40%;
-        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-        animation: rotate(-15deg);
-      }
-      .screen-image-writing-left{
-        top: 390px;
-      }
-      .screen-image-writing-right{
-        top: 320px;
-      }
-
-      @media (max-width: 670px){
-        .screen-image-writing-left{
-        left: 15%;
-        width: 30%;
-      }
-      .screen-image-writing-right{
-        left: 65%;
-        width: 30%;
-      }
-    }
-        
-      @media (min-width: 670px){
-        .screen-image-writing-left{
-        left: 23%;
-        width: 23%;
-      }
-      .screen-image-writing-right{
-        left: 60%;
-        width: 23%;
-      }
-      }
-      
-      @media (min-width: 854px){
-      .screen-image-writing-left{
-        left: 28%;
-        width: 23%;
-      }
-      .screen-image-writing-right{
-        left: 60%;
-        width: 23%;
-      }
-      }
-      
-      @media (min-width: 1050px){
-        .screen-image-writing-left{
-        left: 31%;
-        width: 21%;
-      }
-      .screen-image-writing-right{
-        left: 58%;
-        width: 21%;
-      }
-      }
-      
-      @media (min-width: 1180px){
-        .screen-image-writing-left{
-        left: 33%;
-        width: 19%;
-      }
-      .screen-image-writing-right{
-        left: 58%;
-        width: 19%;
-      }
-      }
-      
-      @keyframes scale {
-  100% {
-    transform: scale(1);
-    transform: rotate(-15deg);
-  }
-}
-
-span {
-  display: absolute;
-  opacity: 0;
-  filter: blur(4px);
-  transform: rotate(-15deg);
-}
-
-span:nth-child(1) {
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(2) {
-  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(3) {
-  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(4) {
-  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(5) {
-  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(6) {
-  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(7) {
-  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(8) {
-  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(9) {
-  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(10) {
-  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(11) {
-  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(12) {
-  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(13) {
-  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(14) {
-  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(15) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(16) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(17) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(18) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(19) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(20) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(21) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(22) {
-  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
-}      
-
-
-
-
-
-
-
-
-
-
-.about-section{
-  width: 100%;
-  height: 700px;
-  background: linear-gradient(to bottom right, #fff7df 50%, rgba(255, 193, 111, 0.747) 50%);
-
-}
-
-
-.about{
-  padding-left: 20%;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(214, 62, 62);
-  margin: 0;
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-
-
-
-@media(max-width: 740px){
-
-  .about-elements{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .my-anime-image{
-
-    width: 250px;
-    flex: 1fr;
-    border-radius: 200px; 
-  
-  }
-
-  .about-text{
-    flex: 1fr;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-}
-@media(min-width: 740px){
-
-  .about-elements{
-    height:300px;
-    display: flex;
-    flex-direction: row;
-  }
-  .my-anime-image{
-    flex: 1fr;
-    border-radius: 200px;
-    margin-left:15%;
-
-  }
-  .about-text{
-    flex: 1fr;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-}
-
-
-
-
-
-  .skills-section{
-    background: linear-gradient(60deg, #cca58f 50%,  rgba(255, 193, 111, 0.747) 50%);
-    height: 300px;
-    display:flex;
-    flex-direction: row;
-  }
-
-
-  .Skills-Tools-text{
-    display: flex;
-    padding: 0;
-    margin-left: 15%;
-    flex: 60%;
-    align-items: center;
-  }
-
-  .Skills-Tools-icons{
-    display: flex;
-    flex-direction: row;
-    flex: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding-left:20%;
-    flex-wrap:wrap;
-  }
-
-  .Skills-Tools-icons img{
-   padding: 20px;
-   margin:0;
-   width: 60px;
-   border-radius: 32px;
-  }
-
-  .Skills-Tools-icons img:nth-child(5){
-    border-radius: 0px;
-  }
-
- @media (max-width: 920px){
-  .Skills-Tools-icons{
-    flex-direction: column;
-    padding-left: 40px;
-  }
-
-  .Skills-Tools-icons img{
-   padding: 20px;
-   margin:0;
-   width: 50px;
-   border-radius: 32px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
- @media(max-width: 740px){
-
-  .project{
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(110deg, white 70%, rgb(175, 175, 211));
-    align-items: center;
-    justify-content: space-between;
-    height: 500px;
- }
- .project-left-section{
-  display:flex;
-  flex-direction: column;
-  padding-left: 10px;
-  align-items: center;
-  height: 100%;
-  justify-content: space-evenly;
- }
-
-.todo-image{
-
-  width: 250px;
-  flex: 1fr;
-}
-
-.todo-text{
-  flex: 1fr;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.project-live-button, .project-github-button{
-  padding: 5px 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border: 0px;
-  background-color:rgb(14, 212, 14);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: large;
-  border-radius: 6px;
-}
-
-.project-live-button:hover, .project-github-button:hover{
-  background-color: rgb(8, 122, 8);
-  box-shadow: 1px 1px 8px #888888;
-}
- }
-
-@media(min-width: 740px){
-
-  .project{
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(110deg, white 70%, rgb(175, 175, 211));
-    align-items: center;
-    justify-content: space-between;
-    height: 600px;
- }
-
- .project-left-section{
-  display:flex;
-  flex-direction: column;
-  padding-left: 10px;
-  align-items: center;
-  justify-content: space-between;
- }
-
-.todo-image{
-  width: 50%;
-}
-.todo-text{
-  width:30%;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.project-live-button, .project-github-button{
-  padding: 5px 5px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: 0px;
-  background-color:rgb(14, 212, 14);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: large;
-  border-radius: 6px;
-}
-
-.project-live-button:hover, .project-github-button:hover{
-  background-color: rgb(8, 122, 8);
-  box-shadow: 1px 1px 8px #888888;
-}
-
-}
-
-
-
-
-
-
-
-
-
-.contact{
-  height: 500px;
-  background:linear-gradient(100deg, white, rgb(121, 196, 196));
-}
-
-.contact-text{
-  padding: 0;
-  margin-left: 15%;
-  flex: 60%;
-  padding-top: 10%;
-  margin-top: 0;
-}
-
-.contact-icons{
-   padding: 20px;
-   margin:0;
-   width: 60px;
-   border-radius: 32px;
-  }
-
-.contact button{
-  border: 0;
-  width: 0;
-  padding: 0;
-} 
-
-.contact div{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin:0;
-  background:linear-gradient(100deg, white, rgb(121, 196, 196));
-}
-
-
-
-
-
-.copy-right-section{
-  height: 50px;
-  background-color: rgb(10, 6, 10);
-  color: #f1f1f1;
-  text-align: center;
-  padding: 0;
-}
-
-
-
-
-
-
-
-@media (max-width: 500px){
-  .header{
-  display:flex;
-  flex-direction: row;
-
-  }
-
-
-  .header-left-section{
-padding: 0;
- margin-left: 10%;
-      }
-
-      .about-section{
-        height: 800px;
-      }
-
-      .skills-section{
-        height: 700px;
-      }
-
-      .todo-image{
-        width:100%;
-      }
-
-      .project{
-width: 100%;
-      }
-
-      .header, .image, .about-section, .skills-section, .project, .contact, .copy-right-section{
-    width: 100%;
-  }
-
-  html{
-    width: 103%;
-    padding: 0;
- margin:0;
-  }
-
-  .contact-items{
-    display: flex;
-    flex-direction: row;
-  }
-  .contact-icons{
-   padding: 0;
-   margin:0;
-   width: 60px;
-   height: 80%;
-   border-radius: 6px;
-  }
-
-
-}
-
-
-
-
-    </style>
 </head>
 <body>
 
   <nav class="header" id="section-header">
     <section class="header-left-section">
-    <button onclick="Scrolltoheader()" class="logo-button"><img class="logo" src="home-icon.png"></button>
+    <button onclick="Scrolltoheader()" class="logo-button"><img class="logo" src="images\home-icon.png"></button>
     </section>
     <section class="header-right-section">   
       <div class="header-items">
@@ -738,7 +32,7 @@ width: 100%;
 
       <div class="header-hidden-section">
         <button class="hambuger-button">
-          <img class="hambuger-icon" src="hamburger-image.png">
+          <img class="hambuger-icon" src="images\hamburger-image.png">
           <div class="header-hidden-items">
             <div><a class="header-hidden-about" href="#section-about">About</a></div>
             <div><a class="header-hidden-skills" href="#section-skills">Skills</a></div>
@@ -755,7 +49,7 @@ width: 100%;
 
   <main>
     <div class="screen" id="section-image">
-      <img class="screen-image" src="screen-image.jpg">
+      <img class="screen-image" src="images\screen-image.jpg">
       <div class="screen-image-writing-left">
         <span>Hi, </span>
         <span>I'm </span>
@@ -792,7 +86,7 @@ width: 100%;
   <main class="about-section" id="section-about">
     <h2 class="about">About</h2>
     <div class="about-elements">
-<img class="my-anime-image" src="my-image.jpg">
+<img class="my-anime-image" src="images\my-image.jpg">
       <div class="about-text"><h2>An autodidact developer passionate about building an user-friendly interface.</h2><br><br>
         I was working as a content associate at Mockat pvt.ltd and realized my interest towards creating cool user-friendly websites. So, I started learning codes for my career as a developer through online. <br><br>
           A team player with optimistic mindset and inquisitive towards developing new skills.
@@ -805,13 +99,13 @@ width: 100%;
   <main class="skills-section" id="section-skills">
     <h1 class="Skills-Tools-text">Skills & Tools</h1>
     <div class="Skills-Tools-icons">
-      <img src="html-icon.png">
-      <img src="css-icon.png">
-      <img src="javascript.png">
-      <img src="java.png">
-      <img src="git.png">
-      <img src="github.png">
-      <img src="visual-studio-code.png">
+      <img src="images\html-icon.png">
+      <img src="images\css-icon.png">
+      <img src="images\javascript.png">
+      <img src="images\java.png">
+      <img src="images\git.png">
+      <img src="images\github.png">
+      <img src="images\visual-studio-code.png">
     </div>
   </main>
 
@@ -819,7 +113,7 @@ width: 100%;
 
   <main class="project" id="section-project">
     <div class="project-left-section">
-      <img class="todo-image" src="todo-image.png">
+      <img class="todo-image" src="images\todo-image.png">
       <button onclick="window.open('https://orezzzz.github.io/To-do-list/')" class="project-live-button">Live</button>
       <button onclick="window.open('https://github.com/orezzzz')" class="project-github-button">GitHub</button>
 
@@ -834,10 +128,10 @@ width: 100%;
   <main class="contact" id="section-contact">
     <h1 class="contact-text">Contact</h1>
     <div class="contact-items">
-      <button onclick="window.open('https://github.com/orezzzz')"><img class="contact-icons"src="github.png"></button>
-      <button onclick="window.open('https://www.instagram.com/guru._.k/')"><img class="contact-icons"src="instagram.png"></button>
-      <button onclick="window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new')"><img class="contact-icons"src="gmail.png"></button>
-      <button onclick="window.open('https://www.linkedin.com/in/guru-k-b4ba101bb/')"><img class="contact-icons"src="linkedin.png"></button>
+      <button onclick="window.open('https://github.com/orezzzz')"><img class="contact-icons"src="images\github.png"></button>
+      <button onclick="window.open('https://www.instagram.com/guru._.k/')"><img class="contact-icons"src="images\instagram.png"></button>
+      <button onclick="window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new')"><img class="contact-icons"src="images\gmail.png"></button>
+      <button onclick="window.open('https://www.linkedin.com/in/guru-k-b4ba101bb/')"><img class="contact-icons"src="images\linkedin.png"></button>
     </div>
     <div>
       <p>Email id: <b>guruk0430@gmail.com</b></p>
