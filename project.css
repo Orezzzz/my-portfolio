@@ -1,35 +1,36 @@
 @media(max-width: 740px){
 
-    .project{
+  .project{
     display: flex;
     flex-direction: row;
     background: linear-gradient(110deg, white 70%, rgb(175, 175, 211));
     align-items: center;
     justify-content: space-between;
     height: 500px;
-    }
-    .project-left-section{
+  }
+
+  .project-left-section{
     display:flex;
     flex-direction: column;
     padding-left: 10px;
     align-items: center;
     height: 100%;
     justify-content: space-evenly;
-    }
+  }
     
-    .todo-image{
-    
+  .todo-image{
     width: 250px;
     flex: 1fr;
-    }
+  }
     
-    .todo-text{
+  .todo-text{
     flex: 1fr;
     margin-right: 10%;
     margin-left: 10%;
-    }
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
     
-    .project-live-button, .project-github-button{
+  .project-live-button, .project-github-button{
     padding: 5px 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -40,43 +41,46 @@
     font-family:Arial, Helvetica, sans-serif;
     font-size: large;
     border-radius: 6px;
-    }
+  }
     
-    .project-live-button:hover, .project-github-button:hover{
+  .project-live-button:hover, .project-github-button:hover{
     background-color: rgb(8, 122, 8);
     box-shadow: 1px 1px 8px #888888;
-    }
-    }
+  }
+}
     
-    @media(min-width: 740px){
+@media(min-width: 740px){
     
-    .project{
+  .project{
     display: flex;
     flex-direction: row;
     background: linear-gradient(110deg, white 70%, rgb(175, 175, 211));
     align-items: center;
     justify-content: space-between;
     height: 600px;
-    }
+  }
     
-    .project-left-section{
+  .project-left-section{
     display:flex;
     flex-direction: column;
     padding-left: 10px;
     align-items: center;
     justify-content: space-between;
-    }
+  }
     
-    .todo-image{
+  .todo-image{
     width: 50%;
-    }
-    .todo-text{
+  }
+
+  .todo-text{
     width:30%;
     margin-right: 10%;
     margin-left: 10%;
-    }
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
     
-    .project-live-button, .project-github-button{
+  .project-live-button, .project-github-button{
     padding: 5px 5px;
     padding-left: 50px;
     padding-right: 50px;
@@ -87,12 +91,11 @@
     font-family:Arial, Helvetica, sans-serif;
     font-size: large;
     border-radius: 6px;
-    }
+  }
     
-    .project-live-button:hover, .project-github-button:hover{
+  .project-live-button:hover, .project-github-button:hover{
     background-color: rgb(8, 122, 8);
     box-shadow: 1px 1px 8px #888888;
-    }
-    
-    }
+  }   
+}
     

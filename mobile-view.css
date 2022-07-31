@@ -1,54 +1,53 @@
 
-@media (max-width: 500px){
-    .header{
+@media (max-width: 570px){
+  .header{
     display:flex;
     flex-direction: row;
+  }
     
-    }
-    
-    
-    .header-left-section{
+  .header-left-section{
     padding: 0;
     margin-left: 10%;
-      }
+  }
     
-      .about-section{
-        height: 800px;
-      }
-    
-      .skills-section{
-        height: 700px;
-      }
-    
-      .todo-image{
-        width:100%;
-      }
-    
-      .project{
-    width: 100%;
-      }
-    
-      .header, .image, .about-section, .skills-section, .project, .contact, .copy-right-section{
-    width: 100%;
+  .about-section{
+    height: 800px;
+  }   
+   
+  .skills-section{
+    height: 700px;
     }
     
-    html{
+  .todo-image{
+    width:100%;
+  }
+    
+  .project{
+    width: 100%;
+  }
+    
+  .header, .image, .about-section, .skills-section, .project, .contact, .copy-right-section{
+    width: 100%;
+  }
+    
+  html{
     width: 103%;
     padding: 0;
     margin:0;
-    }
+  }
     
-    .contact-items{
+  .contact-items{
     display: flex;
     flex-direction: row;
-    }
-    .contact-icons{
+  }
+
+  .contact-icons{
     padding: 0;
     margin:0;
     width: 60px;
     height: 80%;
     border-radius: 6px;
-    }
+  }
     
     
-    }
+}
