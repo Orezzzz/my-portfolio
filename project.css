@@ -1,13 +1,25 @@
-@media(max-width: 740px){
+.project-text{
+  color: rgb(214, 62, 62);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 20%;
+  font-size:xx-large;
+}
+
+.todo-text{
+  font-size:large;
+}
+
+@media(max-width: 900px){
 
   .project{
     display: flex;
     flex-direction: row;
-    background: linear-gradient(110deg, white 70%, rgb(175, 175, 211));
+    /*background: linear-gradient(110deg, white 70%, rgb(175, 175, 211)); */
     align-items: center;
     justify-content: space-between;
     height: 500px;
   }
+
 
   .project-left-section{
     display:flex;
@@ -48,16 +60,18 @@
     box-shadow: 1px 1px 8px #888888;
   }
 }
+
+
     
-@media(min-width: 740px){
+@media(min-width: 900px){
     
   .project{
     display: flex;
     flex-direction: row;
-    background: linear-gradient(110deg, white 70%, rgb(175, 175, 211));
+    /*background: linear-gradient(110deg, white 70%, rgb(175, 175, 211));*/
     align-items: center;
     justify-content: space-between;
-    height: 600px;
+    height: 750px;
   }
     
   .project-left-section{
@@ -69,14 +83,14 @@
   }
     
   .todo-image{
-    width: 50%;
+    max-width: 60%;
   }
 
   .todo-text{
     width:30%;
     margin-right: 10%;
     margin-left: 10%;
-    font-size: larger;
+    font-size: x-large;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
     

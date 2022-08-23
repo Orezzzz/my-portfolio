@@ -25,7 +25,7 @@
       <div class="header-items">
         <div><a class="header-hidden-about" href="#section-about">About</a></div>
         <div><a class="header-hidden-skills" href="#section-skills">Skills</a></div>
-        <div><a class="header-hidden-projects" href="#section-project">My Project</a></div>
+        <div><a class="header-hidden-projects" href="#section-project">My Projects</a></div>
         <div><a class="header-hidden-resume" href="https://www.linkedin.com/resume-builder/urn:li:fs_memberResume:31090209/?edit=true" target="_blank">Resume</a></div>
         <div><a class="header-hidden-contact" href="#section-contact">Contact</a></div>
       </div>
@@ -101,32 +101,76 @@
       <img src="images\html-icon.png">
       <img src="images\css-icon.png">
       <img src="images\javascript.png">
+      <img src="images\reactjs-developer.png">
       <img src="images\java.png">
+      <img src="images\rest-api-icon.png">
+      <img src="images\boot.png">     
       <img src="images\git.png">
       <img src="images\github.png">
+      <img src="images\sts.png">   
       <img src="images\visual-studio-code.png">
     </div>
   </main>
 
 
+  <section>
+    <main class="project" id="section-project">
+      <div class="project-left-section">
+        <h1 class="project-text">Projects</h1>
+        <img class="todo-image" src="images\todo-image.png">
+        <button onclick="window.open('https://orezzzz.github.io/To-do-list/')" class="project-live-button">Live</button>
+        <button onclick="window.open('https://github.com/orezzzz')" class="project-github-button">GitHub</button>
+  
+      </div>
+      <div class="todo-text"><strong style="color:blueviolet"><h1>Any day To-Do list</h1></strong>In this 
+        To-Do list project, I used JavaScript localStorage to store the data, i.e., the created list will exist even 
+        after the browser window is closed.<br><br>
+        Also, we can create a separate To-Do list for any day by selecting a particular date in the calendar.</div>
+    </main>
+  
+  
+    <main class="project" id="section-project">
+      <div class="project-left-section">
+        <img class="todo-image" src="images\youtube-mobile-pc.jpg">
+        <button onclick="window.open('https://orezzzz.github.io/you-tube-clone/')" class="project-live-button">Live</button>
+        <button onclick="window.open('https://github.com/Orezzzz/you-tube-clone')" class="project-github-button">GitHub</button>
+  
+      </div>
+      <div class="todo-text"><strong style="color:rgb(212, 37, 37)"><h1>YouTube Clone</h1></strong>I built this clone using HTML and CSS. With CSS grid, 
+        Flexbox, and media queries,  this clone becomes more responsive to different screen sizes and devices.
+      </div>
+    </main>
 
-  <main class="project" id="section-project">
-    <div class="project-left-section">
-      <img class="todo-image" src="images\todo-image.png">
-      <button onclick="window.open('https://orezzzz.github.io/To-do-list/')" class="project-live-button">Live</button>
-      <button onclick="window.open('https://github.com/orezzzz')" class="project-github-button">GitHub</button>
-
-    </div>
-    <div class="todo-text"><strong style="color:blueviolet">Any day To-Do list</strong><br><br>In this To-Do list project, I used JavaScript localStorage to store the data, i.e., the created list will exist even after the browser window is closed.<br><br>
-      Also, we can create a separate To-Do list for any day by selecting a particular date in the calendar.</div>
-  </main>
-
-
-
+    <main class="project" id="section-project">
+      <div class="project-left-section">
+        <img class="todo-image" src="images\type1.jpg">
+        <button onclick="window.open('https://speed-typing-game-play-1.herokuapp.com/')" class="project-live-button">Live</button>
+        <button onclick="window.open('https://github.com/Orezzzz/speed-typing-react')" class="project-github-button">GitHub</button>
+  
+      </div>
+      <div class="todo-text"><strong style="color:rgb(19, 145, 61)"><h1>Speed Typo Game</h1></strong>This game is built using HTML, CSS, React JS, Spring Boot, 
+        Rest API, and MySQL database.
+        Name, Password, and Score of each player are stored in MySQL database. The scores of all the players who played this game are show in the bottom of the page.
+      </div>
+    </main>
+  </section>
+  
 
 
   <main class="contact" id="section-contact">
     <h1 class="contact-text">Contact</h1>
+    <div class=" email">
+      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input class="text-email" type="text" name="name" placeholder="Enter Name"><br>
+        E-mail:<br>
+        <input class="text-email" type="text" name="mail" placeholder="Enter e-mail"><br>
+        Comment:<br>
+        <textarea placeholder="Comment..."></textarea><br><br>
+        <input class="send-btn" type="submit" value="Send">
+      </form>
+    </div>
+
     <div class="contact-items">
       <button onclick="window.open('https://github.com/orezzzz')"><img class="contact-icons"src="images\github.png"></button>
       <button onclick="window.open('https://www.instagram.com/guru._.k/')"><img class="contact-icons"src="images\instagram.png"></button>
@@ -137,6 +181,10 @@
       <p>Email id: <b>guruk0430@gmail.com</b></p>
       <p>Mobile number: <b>7338817428</b></p>
     </div>
+
+    <div class="copy-right-section">
+      © 2022| Designed and coded by Guru K 😎
+    </div>
   </main>
 
 
@@ -145,9 +193,7 @@
 
 
 
-  <main class="copy-right-section">
-    © 2022| Designed and coded by Guru K 😎
-  </main>
+
 
 <script>
   function Scrolltoheader(){
