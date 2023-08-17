@@ -26,7 +26,7 @@
         <div><a class="header-hidden-about" href="#section-about">About</a></div>
         <div><a class="header-hidden-skills" href="#section-skills">Skills</a></div>
         <div><a class="header-hidden-projects" href="#section-project">My Projects</a></div>
-        <div><a class="header-hidden-resume" href="https://www.linkedin.com/resume-builder/urn:li:fs_memberResume:31090209/?edit=true" target="_blank">Resume</a></div>
+        <div><a class="header-hidden-resume" href="./Guru K Resume.pdf" target="_blank">Resume</a></div>
         <div><a class="header-hidden-contact" href="#section-contact">Contact</a></div>
       </div>
 
@@ -87,7 +87,7 @@
     <div class="about-elements">
       <img class="my-anime-image" src="images\my-image.jpg">
       <div class="about-text"><h2 style="color:rgb(42, 81, 165)">An autodidact developer passionate about building a user-friendly interface.</h2><br><br>
-        I'm a Content writer turned Developer interested to work on new projects. I'm excited to face new challenges to enhance my skills. <br><br>
+        I'm a Developer interested to work in new projects. I'm excited to face new challenges to enhance my skills. <br><br>
         A team player with an optimistic mindset and interested in learning new skills.
       </div>
     </div>
@@ -144,7 +144,7 @@
     <main class="project" id="section-project">
       <div class="project-left-section">
         <img class="todo-image" src="images\type1.jpg">
-        <button onclick="window.open('https://speed-typing-game-play-1.herokuapp.com/')" class="project-live-button">Live</button>
+        <!--<button onclick="window.open('https://speed-typing-game-play-1.herokuapp.com/')" class="project-live-button">Live</button> -->
         <button onclick="window.open('https://github.com/Orezzzz/speed-typing-react')" class="project-github-button">GitHub</button>
   
       </div>
@@ -160,13 +160,14 @@
   <main class="contact" id="section-contact">
     <h1 class="contact-text">Contact</h1>
     <div class=" email">
-      <form action="mailto:guruk0430@gmail.com" method="post" enctype="text/plain">
+      <form action="https://formsubmit.co/guruk0430@gmail.com" method="post">
         Name:<br>
-        <input class="text-email" type="text" name="name" placeholder="Enter Name"><br>
-        E-mail:<br>
-        <input class="text-email" type="text" name="mail" placeholder="Enter e-mail"><br>
-        Comment:<br>
-        <textarea placeholder="Comment..."></textarea><br><br>
+        <input class="text-email" type="text" name="name" required placeholder="Enter Name"><br>
+        Email:<br>
+        <input class="text-email" type="text" name="email" required placeholder="Enter e-mail"><br>
+        Message:<br>
+        <textarea name="message" required placeholder="Message"></textarea><br><br>
+        <input type="hidden" name="_captcha" value="false" >
         <input class="send-btn" type="submit" value="Send">
       </form>
     </div>
